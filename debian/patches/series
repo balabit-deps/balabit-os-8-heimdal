@@ -19,3 +19,5 @@ fix-missing-headers
 0019-CVE-2019-14870-Apply-forwardable-policy-in-protocol-.patch
 0020-CVE-2019-14870-Validate-client-attributes-in-protoco.patch
 python3.diff
+CVE-2021-3671.patch
+CVE-2022-3116.patch

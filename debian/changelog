@@ -1,3 +1,16 @@
+heimdal (7.7.0+dfsg-1ubuntu1.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: NULL pointer dereference when handling missing sname in
+    TGS-REQ
+    - debian/patches/CVE-2021-3671.patch: validate sname in TGS-REQ (kdc).
+    - CVE-2021-3671
+  * SECURITY UPDATE: NULL pointer dereference in SPNEGO          
+    - debian/patches/CVE-2022-3116.patch: fix NULL pointer dereference
+      (spnego).
+    - CVE-2022-3116
+
+ -- Camila Camargo de Matos <camila.camargodematos@canonical.com>  Tue, 11 Oct 2022 14:48:22 -0300
+
 heimdal (7.7.0+dfsg-1ubuntu1) focal; urgency=medium
 
   * Build using python3.
