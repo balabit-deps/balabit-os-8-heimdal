@@ -1,3 +1,13 @@
+heimdal (7.7.0+dfsg-1ubuntu1.2) focal-security; urgency=medium
+
+  * SECURITY UPDATE: out-of-bounds memory access
+    - debian/patches/CVE-2022-41916.patch: move variable assignment and
+      increment to be done later in time to prevent unintended read in
+      find_composition() in lib/wind/normalize.c.
+    - CVE-2022-41916
+
+ -- Rodrigo Figueiredo Zaiden <rodrigo.zaiden@canonical.com>  Wed, 07 Dec 2022 15:14:12 -0300
+
 heimdal (7.7.0+dfsg-1ubuntu1.1) focal-security; urgency=medium
 
   * SECURITY UPDATE: NULL pointer dereference when handling missing sname in

@@ -21,3 +21,4 @@ fix-missing-headers
 python3.diff
 CVE-2021-3671.patch
 CVE-2022-3116.patch
+CVE-2022-41916.patch
