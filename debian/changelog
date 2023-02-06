@@ -1,3 +1,14 @@
+heimdal (7.7.0+dfsg-1ubuntu1.4) focal-security; urgency=medium
+
+  * SECURITY UPDATE: signature validation failure
+    - debian/patches/CVE-2022-45142.patch: fix logic inversion issue caused
+      by the fix for CVE-2022-3437 when using memcmp in
+      _gssapi_verify_mic_arcfour() and _gssapi_unwrap_arcfour() in
+      lib/gssapi/krb5/arcfour.c.
+    - CVE-2022-45142
+
+ -- Rodrigo Figueiredo Zaiden <rodrigo.zaiden@canonical.com>  Mon, 06 Feb 2023 15:32:21 -0300
+
 heimdal (7.7.0+dfsg-1ubuntu1.3) focal-security; urgency=medium
 
   * SECURITY UPDATE: NULL pointer dereference
